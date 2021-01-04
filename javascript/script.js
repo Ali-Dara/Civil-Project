@@ -8,10 +8,16 @@ $(window).scroll(function () {
     }
 })
 
-$('.owl-carousel').owlCarousel({
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    rtl:true,
+    items:4,
     loop:true,
     margin:10,
-    nav:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    dots: false,
     responsive:{
         0:{
             items:1
@@ -23,4 +29,4 @@ $('.owl-carousel').owlCarousel({
             items:5
         }
     }
-})
+});
