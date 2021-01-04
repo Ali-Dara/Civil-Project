@@ -76,15 +76,43 @@
     background-size: cover;
     object-fit: fill;
 
-    // img{
-    //     width: 7rem;
-    // }
 
-    .circle{
-        background-color: $backgroundCard;
-        border-radius: 50%;
-        width: 100%;
-        padding: 50px;
+    @media only screen and (max-width: 400px) {
+        img {
+            width: 2.5rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        .circle {
+            background-color: $backgroundCard;
+            border-radius: 50%;
+            padding-top: 1rem;
+            width: 7rem;
+            height: 7rem;
+            margin: 0px auto;
+        }
+    }
+
+    @media only screen and (min-width: 401px) {
+        img {
+            width: 4rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        .circle {
+            background-color: $backgroundCard;
+            border-radius: 50%;
+            padding-top: 4rem;
+            width: 14rem;
+            height: 14rem;
+            margin: 0px auto;
+        }
     }
 }
 
