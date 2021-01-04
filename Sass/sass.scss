@@ -1,0 +1,91 @@
+@import "variable";
+@import url(Fonts/font.css);
+
+* {
+    font-family: "Sahel";
+}
+
+// Top NavBar In Header
+.navbar {
+    .nav-item {
+        margin-left: 2rem;
+    }
+}
+
+.navBg {
+    background-color: $backgroundColorWithShadow;
+    transition: all ease-in-out .3s;
+}
+
+// Top NavBar In Header
+
+//Top WebSite Banner
+#banner {
+    background: url(../Images/pic.png);
+    width: 100%;
+    height: 780px;
+    background-size: cover;
+    background-position: center;
+
+    .readMoreBtn {
+        background-color: $backgroundColor;
+        padding: 10px;
+        border: none;
+        border-radius: 7px;
+        transition: all ease-in-out .3s;
+
+        &:hover {
+            transform: scale(1.03, 1.03);
+            transition: all ease-in-out .3s;
+            box-shadow: 0px 0px 15px #000;
+        }
+    }
+}
+
+//Top WebSite Banner
+
+// All Content In WebSite
+#content {
+    @media only screen and (min-width: 1000px) {
+        background: url(../Images/tower.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+
+        .services {
+            padding-top: 170px;
+        }
+    }
+
+    .back {
+        background-color: $backgroundColor;
+        border-radius: 50%;
+    }
+
+    .myCard {
+        background-color: $backgroundCard;
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+}
+
+#project {
+    background: url(../Images/ProjectBackground.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+
+    // img{
+    //     width: 7rem;
+    // }
+
+    .circle{
+        background-color: $backgroundCard;
+        border-radius: 50%;
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+// All Content In WebSite
