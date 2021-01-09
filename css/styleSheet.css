@@ -1,4 +1,5 @@
 @import url(Fonts/font.css);
+
 * {
   font-family: "Sahel";
 }
@@ -19,6 +20,7 @@
   background-size: cover;
   background-position: center;
 }
+
 #banner .readMoreBtn {
   background-color: #cf732cd8;
   padding: 10px;
@@ -26,6 +28,7 @@
   border-radius: 7px;
   transition: all ease-in-out 0.3s;
 }
+
 #banner .readMoreBtn:hover {
   transform: scale(1.03, 1.03);
   transition: all ease-in-out 0.3s;
@@ -38,14 +41,17 @@
     background-repeat: no-repeat;
     background-size: 50%;
   }
+
   #content .services {
     padding-top: 170px;
   }
 }
+
 #content .back {
   background-color: #cf732cd8;
   border-radius: 50%;
 }
+
 #content .myCard {
   background-color: #dff3e3b9;
   width: 100%;
@@ -60,13 +66,16 @@
   background-size: cover;
   object-fit: fill;
 }
+
 @media only screen and (max-width: 400px) {
   #project img {
     width: 2.5rem;
   }
+
   #project p {
     font-size: 0.8rem;
   }
+
   #project .circle {
     background-color: #dff3e3b9;
     border-radius: 50%;
@@ -76,13 +85,16 @@
     margin: 0px auto;
   }
 }
+
 @media only screen and (min-width: 401px) {
   #project img {
     width: 4rem;
   }
+
   #project p {
     font-size: 1rem;
   }
+
   #project .circle {
     background-color: #dff3e3b9;
     border-radius: 50%;
@@ -92,5 +104,53 @@
     margin: 0px auto;
   }
 }
+
+#article {
+  background-color: #dff3e3b9;
+  border-radius: 10px;
+}
+
+#article #articleImage {
+  border-radius: 50% 10px 10px 50%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 500px) {
+  #article #articleImage {
+    height: 400px;
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  #article #articleImage {
+    height: 600px;
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #article #articleImage {
+    height: 450px;
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+
+#article .articleCard .link {
+  color: #000;
+}
+
+#article .articleCard .link:hover {
+  color: #5c5c5c;
+  cursor: pointer;
+}
+
+#article .articleCard .activelink {
+  color: #5c5c5c;
+}
+
 
 /*# sourceMappingURL=styleSheet.css.map */

@@ -116,4 +116,45 @@
     }
 }
 
+#article {
+    background-color: $backgroundCard;
+    border-radius: 10px;
+
+    #articleImage {
+        border-radius: 50% 10px 10px 50%;
+        overflow: hidden;
+
+        @media screen and (min-width:500px) {
+            height: 400px;
+            width: 95%;
+            margin: 10px auto;
+        }
+
+        @media screen and (min-width:750px) {
+            height: 600px;
+            width: 95%;
+            margin: 10px auto;
+        }
+
+        @media screen and (min-width:1000px) {
+            height: 450px;
+            width: 95%;
+            margin: 10px auto;
+        }
+    }
+
+    .articleCard {
+        .link {
+            color: #000;
+            &:hover{
+                color: rgb(92, 92, 92);
+                cursor: pointer;
+            }
+        }
+        .activelink{
+            color: rgb(92, 92, 92);
+        }
+    }
+}
+
 // All Content In WebSite
